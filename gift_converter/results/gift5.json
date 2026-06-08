@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-05-27T23:42:06.691086",
+    "total_questions": 2
+  },
+  "questions": [
+    {
+      "question_type": "single_choice",
+      "text": "<p>Дана следующая база данных<br>Students (#id, name, group_id)<br>Groups(#id, name)<br>Courses(#id, title)<br>Enrollments (#student_id, course_id)<br>Orders(#id, client, product, price)<br>Что выведет данный запрос?<br>SELECT s.name<br>FROM Students s<br>JOIN Enrollments e ON s.id = e.student_id<br>WHERE e.course_id = 5;</p>",
+      "title": "2. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>Имена всех студентов, обучающихся на курсе с id=5</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>Название курса с Id=5</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Имя студента с id=5 и все его курсы</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какой результат выражения NULL = NULL в SQL?</p>",
+      "title": "8. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>NULL</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>TRUE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>FALSE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

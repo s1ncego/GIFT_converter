@@ -1,0 +1,422 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-05-27T23:39:36.518851",
+    "total_questions": 16
+  },
+  "questions": [
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какое ключевое слово в SQL используется для сортировки результатов запроса по возрастанию?</p>",
+      "title": "2. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>ASC</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>DESC</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>ORDER</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>SORT BY</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какой оператор используется для добавления новой строки в таблицу?</p>",
+      "title": "8. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>INSERT INTO</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>ADD INTO</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>UPDATE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>ALTER</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какое ограничение целостности гарантирует уникальность значений в столбце и запрещает NULL?</p>",
+      "title": "9. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>UNIQUE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>DEFAULT</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>PRIMARY KEY</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>CHECK</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Что возвращает подзапрос, использующий ключевое слово `EXISTS`?</p>",
+      "title": "10. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>Количество строк</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Сумму значений</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Логическое значение (TRUE/FALSE)</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>Среднее арифметическое</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие из следующих утверждений о первичном ключе верны?</p>",
+      "title": "11. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>Может содержать NULL</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        },
+        {
+          "text": "<p>Должен быть уникальным для каждой строки</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>В таблице может быть только один первичный ключ</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>Может быть изменён в любой момент без ограничений</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие типы данных в SQL обычно используются для хранения целых чисел?</p>",
+      "title": "12. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>INT</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>SMALLINT</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>VARCHAR</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        },
+        {
+          "text": "<p>%33,3%BIGINT</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>FLOAT</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие команды SQL автоматически фиксируют текущую транзакцию (неявный COMMIT) в большинстве СУБД?</p>",
+      "title": "16. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>CREATE TABLE</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>DROP TABLE</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>ALTER TABLE</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>SELECT</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        },
+        {
+          "text": "<p>INSERT (без явного COMMIT не фиксирует)</p>",
+          "is_correct": false,
+          "weight": -100,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие агрегатные функции можно использовать в GROUP BY?</p>",
+      "title": "17. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>COUNT</p>",
+          "is_correct": true,
+          "weight": 20,
+          "feedback": null
+        },
+        {
+          "text": "<p>SUM</p>",
+          "is_correct": true,
+          "weight": 20,
+          "feedback": null
+        },
+        {
+          "text": "<p>AVG</p>",
+          "is_correct": true,
+          "weight": 20,
+          "feedback": null
+        },
+        {
+          "text": "<p>MAX</p>",
+          "is_correct": true,
+          "weight": 20,
+          "feedback": null
+        },
+        {
+          "text": "<p>MIN</p>",
+          "is_correct": true,
+          "weight": 20,
+          "feedback": null
+        },
+        {
+          "text": "<p>HAVING</p>",
+          "is_correct": false,
+          "weight": -100,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие виды JOIN поддерживаются стандартом SQL?</p>",
+      "title": "18. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>INNER JOIN</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>LEFT JOIN</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>RIGHT JOIN</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Как называется оператор SQL, который удаляет все данные из таблицы, но не сбрасывает счётчик автоинкремента в некоторых СУБД?</p>",
+      "title": "21. Короткий ответ",
+      "short_answers": [
+        {
+          "text": "DELETE",
+          "weight": 100
+        },
+        {
+          "text": "DELETE FROM",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое слово в SQL используется для объединения двух таблиц без явного указания условия соединения (декартово произведение)?</p>",
+      "title": "22. Короткий ответ",
+      "short_answers": [
+        {
+          "text": "CROSS JOIN",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Сколько байт обычно занимает тип данных INT в большинстве реляционных СУБД (например, PostgreSQL, MySQL)?</p>",
+      "title": "23. Короткий ответ",
+      "short_answers": [
+        {
+          "text": "4",
+          "weight": 100
+        },
+        {
+          "text": "4 байта",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое слово в SQL позволяет отфильтровать группы после применения GROUP BY?</p>",
+      "title": "25. Короткий ответ",
+      "short_answers": [
+        {
+          "text": "HAVING",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите операторы SQL с их категориями</p>",
+      "title": "26. Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>SELECT</p>",
+          "definition": "<p>DML</p>"
+        },
+        {
+          "term": "<p>CREATE</p>",
+          "definition": "<p>DDL</p>"
+        },
+        {
+          "term": "<p>GRANT</p>",
+          "definition": "<p>DCL</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите нормальные формы с их определениями</p>",
+      "title": "27. Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>1НФ</p>",
+          "definition": "<p>Все атрибуты атомарны, нет повторяющихся групп</p>"
+        },
+        {
+          "term": "<p>2НФ</p>",
+          "definition": "<p>Находится в 1НФ и каждый неключевой атрибут полностью зависит от первичного ключа</p>"
+        },
+        {
+          "term": "<p>3НФ</p>",
+          "definition": "<p>Находится в 2НФ и отсутствуют транзитивные зависимости неключевых атрибутов</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите типы связей между таблицами с их примерами</p>",
+      "title": "28. Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>Один к одному</p>",
+          "definition": "<p>Человек и паспорт</p>"
+        },
+        {
+          "term": "<p>Один ко многим</p>",
+          "definition": "<p>Автор и его объявления</p>"
+        },
+        {
+          "term": "<p>Многие ко многим</p>",
+          "definition": "<p>Студенты и курсы</p>"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "question_number": 1,
+      "warning": "Не найден блок ответов {}"
+    }
+  ]
+}

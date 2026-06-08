@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-06-05T19:33:34.092545",
+    "total_questions": 6
+  },
+  "questions": [
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": "1",
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>:::: Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": null,
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": null,
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p></p>",
+      "title": "4",
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>::6 Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": null,
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>:7: Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": null,
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

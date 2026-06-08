@@ -1,0 +1,26 @@
+
+
+::2. Одиночный выбор::Дана следующая база данных
+Students (\#id, name, group_id)
+Groups(\#id, name)
+Courses(\#id, title)
+Enrollments (\#student_id, course_id)
+Orders(\#id, client, product, price)
+Что выведет данный запрос?
+SELECT s.name
+FROM Students s
+JOIN Enrollments e ON s.id \= e.student_id
+WHERE e.course_id \= 5;
+{
+=Имена всех студентов, обучающихся на курсе с id\=5
+~Название курса с Id\=5
+~Имя студента с id\=5 и все его курсы
+}
+
+
+::8. Одиночный выбор:: Какой результат выражения NULL = NULL в SQL? 
+{
+=NULL
+~TRUE
+~FALSE
+}

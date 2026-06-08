@@ -1,0 +1,516 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-06-05T17:33:21.401641",
+    "total_questions": 20
+  },
+  "questions": [
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какой цвет получится при смешивании синего и желтого?</p>",
+      "title": "1",
+      "choices": [
+        {
+          "text": "<p>зеленый</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>красный</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>синий</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Дана следующая база данных<br>Students (#id, name, group_id)<br>Groups(#id, name)<br>Courses(#id, title)<br>Enrollments (#student_id, course_id)<br>Orders(#id, client, product, price)<br>Что выведет данный запрос?<br>SELECT s.name<br>FROM Students s<br>JOIN Enrollments e ON s.id = e.student_id<br>WHERE e.course_id = 5;</p>",
+      "title": "2. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>Имена всех студентов, обучающихся на курсе с id=5</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>Название курса с Id=5</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Имя студента с id=5 и все его курсы</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Дана следующая база данных<br>Students (#id, name, group_id)<br>Groups(#id, name)<br>Courses(#id, title)<br>Enrollments (#student_id, course_id)<br>Orders(#id, client, product, price)<br>Что выведет данный запрос?<br>SELECT s.name<br>FROM Students s<br>JOIN Enrollments e ON s.id = e.student_id<br>WHERE e.course_id = 5;</p>",
+      "title": "2.1 Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p>Имена всех студентов, обучающихся на курсе с id=5</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>Название курса с Id=5</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>Имя студента с id=5 и все его курсы</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какой результат выражения NULL = NULL в SQL?</p>",
+      "title": "8. Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p></p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>NULL</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>TRUE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>FALSE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какой результат выражения NULL = NULL в SQL?</p>",
+      "title": "8.1 Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p></p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>NULL</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>TRUE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>FALSE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какой результат выражения NULL = NULL в SQL?</p>",
+      "title": "8.1 Одиночный выбор",
+      "choices": [
+        {
+          "text": "<p></p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>NULL</p>",
+          "is_correct": true,
+          "weight": 100,
+          "feedback": null
+        },
+        {
+          "text": "<p>TRUE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>FALSE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие из следующих утверждений о первичном ключе верны?</p>",
+      "title": "11. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>%-50Может содержать NULL</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Должен быть уникальным для каждой строки</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>В таблице может быть только один первичный ключ</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>Может быть изменён в любой момент без ограничений</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие из следующих утверждений о первичном ключе верны?</p>",
+      "title": "11.0 Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>Может содержать NULL</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        },
+        {
+          "text": "<p>50Должен быть уникальным для каждой строки</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>В таблице может быть только один первичный ключ</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>Может быть изменён в любой момент без ограничений</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какие из следующих утверждений о первичном ключе верны?</p>",
+      "title": "11.1 Множественный выбор",
+      "short_answers": [
+        {
+          "text": "%-50",
+          "weight": 100
+        },
+        {
+          "text": "Может содержать NULL",
+          "weight": 100
+        },
+        {
+          "text": "50",
+          "weight": 100
+        },
+        {
+          "text": "Должен быть уникальным для каждой строки",
+          "weight": 100
+        },
+        {
+          "text": "",
+          "weight": 50
+        },
+        {
+          "text": "В таблице может быть только один первичный ключ",
+          "weight": 100
+        },
+        {
+          "text": "",
+          "weight": -50
+        },
+        {
+          "text": "Может быть изменён в любой момент без ограничений",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие из следующих утверждений о первичном ключе верны?</p>",
+      "title": "11. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>%-50Может содержать NULL</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Должен быть уникальным для каждой строки</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>В таблице может быть только один первичный ключ</p>",
+          "is_correct": true,
+          "weight": 50,
+          "feedback": null
+        },
+        {
+          "text": "<p>Может быть изменён в любой момент без ограничений</p>",
+          "is_correct": false,
+          "weight": -50,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какие из следующих утверждений о первичном ключе: верны?</p>",
+      "title": "11.1 Множественный выбор",
+      "short_answers": [
+        {
+          "text": "%-50",
+          "weight": 100
+        },
+        {
+          "text": "Может содержать NULL",
+          "weight": 100
+        },
+        {
+          "text": "50",
+          "weight": 100
+        },
+        {
+          "text": "Должен быть уникальным для каждой строки",
+          "weight": 100
+        },
+        {
+          "text": "",
+          "weight": 50
+        },
+        {
+          "text": "В таблице может быть только один первичный ключ",
+          "weight": 100
+        },
+        {
+          "text": "",
+          "weight": -50
+        },
+        {
+          "text": "Может быть изменён в любой момент без ограничений",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие из перечисленных операторов относятся к DML (Data Manipulation Language)?</p>",
+      "title": "13. Множественный выбор",
+      "choices": [
+        {
+          "text": "<p>SELECT</p>",
+          "is_correct": false,
+          "weight": -33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>INSERT</p>",
+          "is_correct": false,
+          "weight": -33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>%-33,3%UPDATE</p>",
+          "is_correct": false,
+          "weight": 0,
+          "feedback": null
+        },
+        {
+          "text": "<p>CREATE</p>",
+          "is_correct": false,
+          "weight": -100,
+          "feedback": null
+        },
+        {
+          "text": "<p>DROP</p>",
+          "is_correct": false,
+          "weight": -100,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое слово в SQL позволяет отфильтровать группы после применения GROUP BY?</p>",
+      "title": "25. Короткий ответ",
+      "short_answers": [
+        {
+          "text": "HAVING",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое слово в SQL позволяет отфильтровать группы после применения GROUP BY?</p>",
+      "title": "25.1 Короткий ответ",
+      "short_answers": [
+        {
+          "text": "HAVING=",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое слово в SQL позволяет отфильтровать группы после применения GROUP BY?</p>",
+      "title": "25.2 Короткий ответ",
+      "short_answers": [
+        {
+          "text": "HAV",
+          "weight": 100
+        },
+        {
+          "text": "ING=",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Какое ключевое > слово в SQL позволяет отфильтровать группы после применения GROUP BY?</p>",
+      "title": "25.3 Короткий ответ",
+      "short_answers": [
+        {
+          "text": "HAVING=",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите операторы SQL с их категориями</p>",
+      "title": "26. Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>CREATE</p>",
+          "definition": "<p>DDL</p>"
+        },
+        {
+          "term": "<p>GRANT</p>",
+          "definition": "<p>DCL/#</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите операторы SQL с их категориями</p>",
+      "title": "26.0 Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>SELECT</p>",
+          "definition": "<p>DML</p>"
+        },
+        {
+          "term": "<p>CREATE</p>",
+          "definition": "<p>DDL</p>"
+        },
+        {
+          "term": "<p>GRANT</p>",
+          "definition": "<p>DCL/#</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите операторы SQL с их категориями</p>",
+      "title": "26.1 Соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>GRANT</p>",
+          "definition": "<p>DCL</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>:26.2 Соответствие:: Соотнесите операторы SQL с их категориями</p>",
+      "title": null,
+      "matching_pairs": [
+        {
+          "term": "<p>SELECT</p>",
+          "definition": "<p>DML</p>"
+        },
+        {
+          "term": "<p>CREATE</p>",
+          "definition": "<p>DDL</p>"
+        },
+        {
+          "term": "<p>GRANT</p>",
+          "definition": "<p>DCL</p>"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "question_number": 4,
+      "warning": "Не найден блок ответов {}"
+    },
+    {
+      "question_number": 5,
+      "warning": "Не найден блок ответов {}"
+    },
+    {
+      "question_number": 21,
+      "warning": "Не найден блок ответов {}"
+    },
+    {
+      "question_number": 24,
+      "warning": "Не найден блок ответов {}"
+    }
+  ]
+}

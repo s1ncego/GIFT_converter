@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-05-11T14:21:31.028562",
+    "total_questions": 7
+  },
+  "questions": [
+    {
+      "question_type": "single_choice",
+      "text": "<p>Вам даны два массива</p><p>  a = np.array([1, 2, 4])</p><p>  b = np.array([5, 6, 7])</p><p>Что будет выведено в результате операции сложения?</p><p>  print(a + b)</p>",
+      "title": "10",
+      "choices": [
+        {
+          "text": "<p>[1, 2, 4, 5, 6, 7]</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>[6, 8, 11]</p>",
+          "is_correct": true,
+          "weight": 100.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>TypeError</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>'124567'</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "matching",
+      "text": "<p>Соотнесите страны и их столицы</p>",
+      "title": "Столицы. вопрос на соответствие",
+      "matching_pairs": [
+        {
+          "term": "<p>Италия</p>",
+          "definition": "<p>Рим</p>"
+        },
+        {
+          "term": "<p>Испания</p>",
+          "definition": "<p>Мадрид</p>"
+        },
+        {
+          "term": "<p>Канада</p>",
+          "definition": "<p>Оттава</p>"
+        },
+        {
+          "term": "<p>Япония</p>",
+          "definition": "<p>Токио</p>"
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>Какая директория используется по умолчанию для jsp-файлов?</p>",
+      "title": "Вопрос 1. единичный выбор",
+      "choices": [
+        {
+          "text": "<p>META-INF</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>EB-INF</p>",
+          "is_correct": true,
+          "weight": 100.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>src</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>resources</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Что должны содержать все сущности JPA?</p>",
+      "title": "Вопрос 2. множественный выбор",
+      "choices": [
+        {
+          "text": "<p>Getter</p>",
+          "is_correct": true,
+          "weight": 50.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Конструктор по умолчанию</p>",
+          "is_correct": true,
+          "weight": 50.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Метод инициализации</p>",
+          "is_correct": false,
+          "weight": -50.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>Setter</p>",
+          "is_correct": false,
+          "weight": -50.0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "short_answer",
+      "text": "<p>Сколько байт в килобайте?</p>",
+      "title": "Вопрос 3. короткий ответ",
+      "short_answers": [
+        {
+          "text": "1024 байта",
+          "weight": 100.0
+        },
+        {
+          "text": "1024",
+          "weight": 100.0
+        }
+      ]
+    },
+    {
+      "question_type": "single_choice",
+      "text": "<p>В чем состоит отличие растровой графики (фотографии) от векторной (иллюстрации)?</p>",
+      "title": "12",
+      "choices": [
+        {
+          "text": "<p>растровая графика не используется в дизайне</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>растровая графика не может быть черно-белой</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>растровая графика состоит из пикселей и теряет качество при масштабировании</p>",
+          "is_correct": true,
+          "weight": 100.0,
+          "feedback": null
+        },
+        {
+          "text": "<p>растровую графику нельзя копировать</p>",
+          "is_correct": false,
+          "weight": 0.0,
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "question_type": "multiple_choice",
+      "text": "<p>Какие значения можно копировать с одного объекта на другой с помощью Constraints?</p>",
+      "title": "29",
+      "choices": [
+        {
+          "text": "<p>Размер</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>анимацию модификаторов</p>",
+          "is_correct": false,
+          "weight": -33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>Координаты</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>Угол</p>",
+          "is_correct": true,
+          "weight": 33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>Ключи формы</p>",
+          "is_correct": false,
+          "weight": -33.3,
+          "feedback": null
+        },
+        {
+          "text": "<p>Материал</p>",
+          "is_correct": false,
+          "weight": -33.3,
+          "feedback": null
+        }
+      ]
+    }
+  ]
+}

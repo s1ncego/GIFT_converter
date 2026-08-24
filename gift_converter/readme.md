@@ -9,7 +9,7 @@
 - JSON -> GIFT
 
 ## Технологии
-Python - FastAPI - Uvicorn 
+Python 3.11 - FastAPI - Uvicorn 
 
 ## Структура проекта
 - gift_converter/

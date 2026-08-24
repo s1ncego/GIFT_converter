@@ -1,10 +1,13 @@
+import io
 import json
+import zipfile
 from datetime import datetime
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse, PlainTextResponse
 from gift_parser import GiftParser
 from json_generator import question_to_dict
 from gift_generator import load_questions_from_dict, questions_to_gift_string
+from image_processor import validate_zip_size  # ← новый импорт
 from pydantic import BaseModel
 from typing import List, Optional
 
@@ -38,7 +41,6 @@ class ConvertResponseSchema(BaseModel):
 app = FastAPI(
     title="GIFT Converter API",
     version="1.0.0",
-    #swagger_ui_parameters={"defaultModelsExpandDepth": -1}
 )
 
 
@@ -65,30 +67,59 @@ def health_check():
 
 @app.post("/gift-to-json", response_model=ConvertResponseSchema)
 async def gift_to_json(file: UploadFile = File(...)):
-    if not file.filename.endswith(('.gift', '.txt')):
-        raise HTTPException(status_code=400, detail="Нужен .gift или .txt файл")
 
     content_bytes = await file.read()
+    filename = file.filename.lower()
 
-    content = None
-    for encoding in ['utf-8-sig', 'utf-8', 'cp1251']:
+    if filename.endswith('.zip'):
+
         try:
-            content = content_bytes.decode(encoding)
-            break
-        except UnicodeDecodeError:
-            continue
+            validate_zip_size(content_bytes)
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e))
 
-    if content is None:
-        raise HTTPException(status_code=400, detail="Не удалось прочитать файл")
+        try:
+            zip_buffer = io.BytesIO(content_bytes)
+            zip_file = zipfile.ZipFile(zip_buffer, 'r')
+        except zipfile.BadZipFile:
+            raise HTTPException(status_code=400, detail="Повреждённый ZIP файл")
 
-    parser = GiftParser()
-    questions = parser.parse_string(content)
+        gift_names = [n for n in zip_file.namelist() if n.endswith('.gift')]
+        if not gift_names:
+            raise HTTPException(status_code=400, detail="В ZIP не найден .gift файл")
+
+        gift_bytes = zip_file.read(gift_names[0])
+        content = _decode_content(gift_bytes)
+
+        parser = GiftParser()
+        questions = parser.parse_string(content, zip_file=zip_file)
+        zip_file.close()
+
+    elif filename.endswith(('.gift', '.txt')):
+        content = _decode_content(content_bytes)
+        parser = GiftParser()
+        questions = parser.parse_string(content)
+
+    else:
+        raise HTTPException(
+            status_code=400,
+            detail="Нужен .gift, .txt или .zip файл"
+        )
 
     return JSONResponse(content={
         "created_at": datetime.now().isoformat(),
         "total_questions": len(questions),
         "questions": [question_to_dict(q) for q in questions]
     })
+
+
+def _decode_content(content_bytes: bytes) -> str:
+    for encoding in ['utf-8-sig', 'utf-8', 'cp1251']:
+        try:
+            return content_bytes.decode(encoding)
+        except UnicodeDecodeError:
+            continue
+    raise HTTPException(status_code=400, detail="Не удалось прочитать файл")
 
 
 @app.post("/json-to-gift")

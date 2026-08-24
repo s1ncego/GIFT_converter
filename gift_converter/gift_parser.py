@@ -1,4 +1,7 @@
 import re
+import zipfile
+from typing import Optional
+from image_processor import process_images_in_text
 from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 
@@ -58,6 +61,7 @@ class GiftParser:
     def __init__(self):
         self.errors = []
         self.warnings = []
+        self.zip_file: Optional[zipfile.ZipFile] = None
 
     def parse_file(self, filepath: str) -> List[Question]:
         try:
@@ -68,9 +72,10 @@ class GiftParser:
                 content = f.read()
         return self.parse_string(content)
 
-    def parse_string(self, content: str) -> List[Question]:
+    def parse_string(self, content: str, zip_file: Optional[zipfile.ZipFile] = None) -> List[Question]:
         self.errors = []
         self.warnings = []
+        self.zip_file = zip_file
 
         content = remove_comments(content)
         content = content.replace('\r\n', '\n').replace('\r', '\n')
@@ -113,6 +118,7 @@ class GiftParser:
             return None
 
         question_text = unescape_gift(question_text.strip())
+        question_text = process_images_in_text(question_text, self.zip_file)
         question_html = text_to_html(question_text)
 
         q_type, choices, short_answers, matching_pairs = \
